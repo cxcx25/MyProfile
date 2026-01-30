@@ -1,0 +1,120 @@
+
+Service Desk Analyst/ C# .net developer
+Service Desk Analyst/ C# .net developer
+WeSupport IncorporatedWeSupport Incorporated
+Feb 2024 - Jan 2026 · 2 yrsFeb 2024 to Jan 2026 · 2 yrs
+• Provided Level 2 support for Azure AD, Microsoft 365, and SAP, managing user identities, access provisioning, role assignments, and security-related requests in alignment with IAM and compliance standards.
+• Actively supported Identity and Access Management (IDM) operations, including account lifecycle management, access reviews, mailbox permissions, and distribution list administration.
+• Developed and maintained clear, standardized technical documentation and SOPs, improving consistency, reducing resolution time, and supporting knowledge transfer across service desk teams.
+• Managed software deployment and application support through Microsoft Intune and manual installation processes, leveraging RMM tools for remote troubleshooting, monitoring, and device management.
+• Administered email and collaboration services, including mailbox access, shared mailboxes, distribution lists, licensing, and PSA system integration.
+• Delivered end-to-end IT support covering license assignments, endpoint issues, and network connectivity troubleshooting across diverse enterprise environments.
+• Drove automation and tooling improvements by developing PowerShell and Python scripts to streamline repetitive service desk and IAM tasks, including Active Directory automation initiatives.
+• Independently designed and developed internal tooling projects, including a C# WPF-based Active Directory and Azure AD management application and a Python desktop notepad, knowledge base, and ticket management application, to improve operational visibility and efficiency.
+• Provided Level 2 support for Azure AD, Microsoft 365, and SAP, managing user identities, access provisioning, role assignments, and security-related requests in alignment with IAM and compliance standards. • Actively supported Identity and Access Management (IDM) operations, including account lifecycle management, access reviews, mailbox permissions, and distribution list administration. • Developed and maintained clear, standardized technical documentation and SOPs, improving consistency, reducing resolution time, and supporting knowledge transfer across service desk teams. • Managed software deployment and application support through Microsoft Intune and manual installation processes, leveraging RMM tools for remote troubleshooting, monitoring, and device management. • Administered email and collaboration services, including mailbox access, shared mailboxes, distribution lists, licensing, and PSA system integration. • Delivered end-to-end IT support covering license assignments, endpoint issues, and network connectivity troubleshooting across diverse enterprise environments. • Drove automation and tooling improvements by developing PowerShell and Python scripts to streamline repetitive service desk and IAM tasks, including Active Directory automation initiatives. • Independently designed and developed internal tooling projects, including a C# WPF-based Active Directory and Azure AD management application and a Python desktop notepad, knowledge base, and ticket management application, to improve operational visibility and efficiency.
+TTEC logo
+At Home Service Desk T1 Voice
+At Home Service Desk T1 Voice
+TTEC · Full-timeTTEC · Full-time
+Sep 2022 - Feb 2024 · 1 yr 6 mosSep 2022 to Feb 2024 · 1 yr 6 mos
+RemoteRemote
+• Delivered technical support to a diverse customer base via phone, email, and chat, resolving hardware, software, and network connectivity issues.
+• Accurately logged and tracked customer issues within the company's ticketing system, ensuring timely escalation of complex problems to higher-level teams.
+• Maintained precise and current customer account information.
+• Delivered technical support to a diverse customer base via phone, email, and chat, resolving hardware, software, and network connectivity issues. • Accurately logged and tracked customer issues within the company's ticketing system, ensuring timely escalation of complex problems to higher-level teams. • Maintained precise and current customer account information.
+Skills: Performance Testing · LDAP Administration · Microsoft Azure · English · Customer Support · Active Directory · Computer Literacy · Help Desk Support · Communication · Contact Centers · Web Support · Coordination Skills · Analytical Skills · Desktop Computers · Software Updates · Written Communication · Problem Solving · Desktop Support
+Skills: Performance Testing · LDAP Administration · Microsoft Azure · English · Customer Support · Active Directory · Computer Literacy · Help Desk Support · Communication · Contact Centers · Web Support · Coordination Skills · Analytical Skills · Desktop Computers · Software Updates · Written Communication · Problem Solving · Desktop Support
+Concentrix logo
+Service Desk Specialist
+Service Desk Specialist
+Concentrix · Full-timeConcentrix · Full-time
+Sep 2021 - Aug 2022 · 1 yrSep 2021 to Aug 2022 · 1 yr
+RemoteRemote
+• Provided technical support to customers across multiple channels (phone, email, chat), diagnosing and resolving hardware, software, and network issues.
+• Managed customer issue lifecycle through the ticketing system, escalating unresolved issues efficiently.
+• Provided technical support to customers across multiple channels (phone, email, chat), diagnosing and resolving hardware, software, and network issues. • Managed customer issue lifecycle through the ticketing system, escalating unresolved issues efficiently.
+Skills: English · Customer Support · Computer Literacy · Help Desk Support · Communication · Contact Centers · Coordination Skills · Analytical Skills · Desktop Computers · Software Updates · Written Communication
+Skills: English · Customer Support · Computer Literacy · Help Desk Support · Communication · Contact Centers · Coordination Skills · Analytical Skills · Desktop Computers · Software Updates · Written Communication
+TTEC logo
+Service Desk
+Service Desk
+TTEC · Full-timeTTEC · Full-time
+Oct 2019 - Aug 2021 · 1 yr 11 mosOct 2019 to Aug 2021 · 1 yr 11 mos
+On-siteOn-site
+• Provided technical assistance and ensured meticulous maintenance of patient medical records and customer information in a healthcare environment.
+• Demonstrated expertise in technical troubleshooting, data accuracy, and customer service within a regulated industry.
+• Provided technical assistance and ensured meticulous maintenance of patient medical records and customer information in a healthcare environment. • Demonstrated expertise in technical troubleshooting, data accuracy, and customer service within a regulated industry.
+Skills: English · Customer Support · Computer Literacy · Help Desk Support · Communication · Contact Centers · Coordination Skills · Analytical Skills · Software Updates · Written Communication
+Skills: English · Customer Support · Computer Literacy · Help Desk Support · Communication · Contact Centers · Coordination Skills · Analytical Skills · Software Updates · Written Communication
+Grab logo
+Grab Operator / Driver
+Grab Operator / Driver
+Grab · Self-employedGrab · Self-employed
+Nov 2016 - Aug 2019 · 2 yrs 10 mosNov 2016 to Aug 2019 · 2 yrs 10 mos
+As a Grab driver, my responsibilities include providing safe and reliable transportation services to passengers while adhering to traffic laws and regulations. I ensure a positive customer experience by maintaining a clean and comfortable vehicle, and by communicating effectively with passengers. I also manage payment transactions and keep track of expenses to maintain profitability.
+As a Grab driver, my responsibilities include providing safe and reliable transportation services to passengers while adhering to traffic laws and regulations. I ensure a positive customer experience by maintaining a clean and comfortable vehicle, and by communicating effectively with passengers. I also manage payment transactions and keep track of expenses to maintain profitability.
+Skills: English · Communication · Coordination Skills · Analytical Skills
+Skills: English · Communication · Coordination Skills · Analytical Skills
+Fahd Abdullah Alireza & Partners Engineering Consultants Co. (FAEC) logo
+Telecom Engineer
+Telecom Engineer
+Fahd Abdullah Alireza & Partners Engineering Consultants Co. (FAEC)Fahd Abdullah Alireza & Partners Engineering Consultants Co. (FAEC)
+Mar 2014 - Mar 2016 · 2 yrs 1 moMar 2014 to Mar 2016 · 2 yrs 1 mo
+Royal Commission YANBU, KSARoyal Commission YANBU, KSA
+As a Consultant and Designer, I was responsible for providing expert guidance and design solutions for various systems including Voice, Data, IPTV, Fire alarm, Public address, CCTV, Access control, Audio/Visual System and Clock for SABIC housing and Royal Commission Jubail and Yanbu Project. My duties included preparing Bill of quantities, responding to RC comments, reviewing designs, and creating Issued for construction (IFC) drawings. I also reviewed material specification submittals and responded to technical queries (TQ) from contractors. As a Revit specialist, I provided architectural, structural and MEP expertise. Additionally, I served as the AcrGIS data controller for the project.
+As a Consultant and Designer, I was responsible for providing expert guidance and design solutions for various systems including Voice, Data, IPTV, Fire alarm, Public address, CCTV, Access control, Audio/Visual System and Clock for SABIC housing and Royal Commission Jubail and Yanbu Project. My duties included preparing Bill of quantities, responding to RC comments, reviewing designs, and creating Issued for construction (IFC) drawings. I also reviewed material specification submittals and responded to technical queries (TQ) from contractors. As a Revit specialist, I provided architectural, structural and MEP expertise. Additionally, I served as the AcrGIS data controller for the project.
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · Microsoft Azure · English · Active Directory · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · Microsoft Azure · English · Active Directory · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+SK Engineering & Construction Co. Ltd logo
+Project Engineer and Arc GIS Specialist
+Project Engineer and Arc GIS Specialist
+SK Engineering & Construction Co. LtdSK Engineering & Construction Co. Ltd
+Aug 2011 - Aug 2013 · 2 yrs 1 moAug 2011 to Aug 2013 · 2 yrs 1 mo
+Saudi ArabiaSaudi Arabia
+As a Project/Design Engineer, I have extensive experience in designing civil, cable, and fiber schematic diagrams for various districts awarded by Mobily and STC. I am skilled in planning, scheduling, and providing work direction to ensure the efficiency, adequacy, and conformance to overall objectives of complex engineering problems. I also initiate detailed work outlines, make decisions on basic approaches, and delegate work to other engineers for final development of specialized or technical proposals and proposed projects.
+
+In addition, I discuss, coordinate, and resolve problems with personnel throughout the company and subsidiaries, as well as with outside organizations. I act as a technical consultant when required, and review the work of directed engineers to ensure reports are written according to established methods of good report presentation. I take recommendations for further study or report changes and approve reports for transmittal to the supervisor.
+
+Furthermore, I have experience as an ArcGIS Engineer and ArcFM Engineer. I maintain and review all data encoded in the database of Mobily server, as per the design and as per the as-built of SKEC awarded and finished projects. I also train, monitor, and develop SK GIS personnel to adopt Mobily's ArcGIS system, and help improve the system by adding attributes using Python. Lastly, I am ESRI certified.
+As a Project/Design Engineer, I have extensive experience in designing civil, cable, and fiber schematic diagrams for various districts awarded by Mobily and STC. I am skilled in planning, scheduling, and providing work direction to ensure the efficiency, adequacy, and conformance to overall objectives of complex engineering problems. I also initiate detailed work outlines, make decisions on basic approaches, and delegate work to other engineers for final development of specialized or technical proposals and proposed projects. In addition, I discuss, coordinate, and resolve problems with personnel throughout the company and subsidiaries, as well as with outside organizations. I act as a technical consultant when required, and review the work of directed engineers to ensure reports are written according to established methods of good report presentation. I take recommendations for further study or report changes and approve reports for transmittal to the supervisor. Furthermore, I have experience as an ArcGIS Engineer and ArcFM Engineer. I maintain and review all data encoded in the database of Mobily server, as per the design and as per the as-built of SKEC awarded and finished projects. I also train, monitor, and develop SK GIS personnel to adopt Mobily's ArcGIS system, and help improve the system by adding attributes using Python. Lastly, I am ESRI certified.
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · Microsoft Azure · English · Active Directory · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · Microsoft Azure · English · Active Directory · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+Middle Sea Telecom CO. logo
+Telecommunications Engineer
+Telecommunications Engineer
+Middle Sea TelecomMiddle Sea Telecom
+May 2009 - May 2011 · 2 yrs 1 moMay 2009 to May 2011 · 2 yrs 1 mo
+Saudi ArabiaSaudi Arabia
+As a Telecom Engineer, I have attended site meetings and inspections, regularly reported on progress, and closely monitored project schedules for Saudi Telecom and Mobily. I have implemented and supervised civil works, primary and secondary copper jobs, fiber installation and repair, and all MSAN replacement jobs.
+Additionally, I have evaluated technical specifications of as-built plans, prepared technical solutions, and conducted field surveys and variation analyses. I have managed and prepared all necessary materials and manpower, and created project forecasts for specific projects. I have also successfully redesigned as-built plans using AutoCAD and Micro Station, and created Binders for all jobs completed. Finally, I have prepared Bill of Quantities for all projects.
+As a Telecom Engineer, I have attended site meetings and inspections, regularly reported on progress, and closely monitored project schedules for Saudi Telecom and Mobily. I have implemented and supervised civil works, primary and secondary copper jobs, fiber installation and repair, and all MSAN replacement jobs. Additionally, I have evaluated technical specifications of as-built plans, prepared technical solutions, and conducted field surveys and variation analyses. I have managed and prepared all necessary materials and manpower, and created project forecasts for specific projects. I have also successfully redesigned as-built plans using AutoCAD and Micro Station, and created Binders for all jobs completed. Finally, I have prepared Bill of Quantities for all projects.
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · English · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · English · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+Telecommunications Engineer
+Telecommunications Engineer
+Telecommunications Engineer
+NESCONESCO
+Feb 2006 - Jan 2009 · 3 yrsFeb 2006 to Jan 2009 · 3 yrs
+Saudi ArabiaSaudi Arabia
+AL-Hasa Project KSA
+
+Dammam – Riyadh pipe network 
+Al-Hasa Pump station to pump station project
+
+
+As a Mechanical Engineer (Piping), I conduct surveys and make strategic plans for pipe profiles and elevations. I use transit to determine the exact location of pipes. I implement and supervise all civil works and pipe installations on site, and I solve problems by computing new pipe elevations and updating designs for the best solution. I attend site meetings and inspections, report regularly on progress, and monitor schedules. Additionally, I redesign as-built plans and design using AutoCAD and Micro Station.
+
+
+
+Riyadh Primary and Secondary network for Saudi Telecom 
+
+Jeddah RAN to MSAN replacement STC Project.
+MSAN commissioning and DSL testing and trouble shouting.
+Riyadh, Jeddah and Qasim primary and secondary construction and repair for Saudi Telecom Company. 
+
+
+As an Implementation Engineer, I have designed Fiber and Copper Networks for primary and secondary use, and successfully redesigned as-built plans. Additionally, I have imparted my high knowledge of Copper and Fiber Optic Jointing to all NESCO technicians. I have implemented and supervised civil works, primary and secondary copper jobs, fiber installation and repair, and all MSAN replacement jobs for Saudi Telecom project.
+Furthermore, I have evaluated technical specifications of as-built plans, prepared technical solutions, and conducted field surveys and variation analysis. I have made Bill of Quantities and Binders for all Copper and Fiber optic jobs, and designed using AutoCAD and Micro Station. I have also monitored and supervised MSAN installation from civil works up to MSAN cut-over and commissioning in Jeddah RAN to MSAN replacement, and conducted DSL installation, troubleshooting, and testing.
+AL-Hasa Project KSA Dammam – Riyadh pipe network Al-Hasa Pump station to pump station project As a Mechanical Engineer (Piping), I conduct surveys and make strategic plans for pipe profiles and elevations. I use transit to determine the exact location of pipes. I implement and supervise all civil works and pipe installations on site, and I solve problems by computing new pipe elevations and updating designs for the best solution. I attend site meetings and inspections, report regularly on progress, and monitor schedules. Additionally, I redesign as-built plans and design using AutoCAD and Micro Station. Riyadh Primary and Secondary network for Saudi Telecom Jeddah RAN to MSAN replacement STC Project. MSAN commissioning and DSL testing and trouble shouting. Riyadh, Jeddah and Qasim primary and secondary construction and repair for Saudi Telecom Company. As an Implementation Engineer, I have designed Fiber and Copper Networks for primary and secondary use, and successfully redesigned as-built plans. Additionally, I have imparted my high knowledge of Copper and Fiber Optic Jointing to all NESCO technicians. I have implemented and supervised civil works, primary and secondary copper jobs, fiber installation and repair, and all MSAN replacement jobs for Saudi Telecom project. Furthermore, I have evaluated technical specifications of as-built plans, prepared technical solutions, and conducted field surveys and variation analysis. I have made Bill of Quantities and Binders for all Copper and Fiber optic jobs, and designed using AutoCAD and Micro Station. I have also monitored and supervised MSAN installation from civil works up to MSAN cut-over and commissioning in Jeddah RAN to MSAN replacement, and conducted DSL installation, troubleshooting, and testing.
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · English · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
+Skills: Fiber Optic Cable · Technical Reports · Project Management · LDAP Administration · English · Computer Literacy · Field Inspection · Coordination Skills · Analytical Skills · Cables · Telecom Infrastructure
