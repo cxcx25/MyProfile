@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #1e1e1e;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1915,7 +1915,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #ffffff;
-			color: #312450 !important;
+			color: #ffffff !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2356,7 +2356,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #312450;
+			background: #1e1e1e;
 		}
 
 		select:focus::-ms-value {
@@ -2525,7 +2525,7 @@ input, select, textarea {
 			display: block;
 			background: #ffffff;
 			border-radius: 100%;
-			color: #312450;
+			color: #ffffff;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2587,12 +2587,21 @@ input, select, textarea {
 			top: 0.25em;
 		}
 
-		.image.right {
-			float: right;
-			margin: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
+		        .image.right {
+		            float: right;
+		            margin: 0 0 1em 1.5em;
+		            top: 0.25em;
+		        }
+		
+		    .profile-headshot {
+		        width: 10em;
+		        height: 10em;
+		        border-radius: 50%;
+		        display: block;
+		        margin: 0 auto 2em auto;
+		        object-fit: cover; /* Ensures the image fills the circular container */
+		        object-position: center center; /* Centers the image content */
+		    }
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
@@ -3529,7 +3538,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #1e1e1e;
 		cursor: default;
 		height: 100vh;
 		left: 0;
