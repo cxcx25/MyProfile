@@ -124,11 +124,11 @@
 
 			@include breakpoint('<=small') {
 
-				section {
+								section {
 
-					@include padding(1.5em); // Adjusted padding for small screens
+									@include padding(1.5em, 1.5em); // Corrected padding for small screens
 
-				}
+								}
 
 			}
 
@@ -136,11 +136,11 @@
 
 			@include breakpoint('<=xsmall') {
 
-				section {
+								section {
 
-					@include padding(1em); // Adjusted padding for xsmall screens
+									@include padding(1em, 1em); // Corrected padding for xsmall screens
 
-				}
+								}
 
 			}
 
