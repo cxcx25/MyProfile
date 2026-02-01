@@ -1,3 +1,5 @@
+@use "sass:string";
+
 // vendor.scss v1.0 | @ajlkn | MIT licensed */
 
 // Vars.
@@ -270,7 +272,7 @@
 		@else {
 
 			$result: ();
-			$index: if($index < 0, length($list) + $index + 1, $index);
+			$index: if($condition: $index < 0, $if-true: length($list) + $index + 1, $else: $index);
 
 			@for $i from 1 through length($list) {
 
@@ -297,7 +299,7 @@
 		$index: str-index($string, $search);
 
 		@if $index {
-			@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+			@return string.slice($string, 1, $index - 1) + $replace + str-replace(string.slice($string, $index + str-length($search)), $search, $replace);
 		}
 
 		@return $string;
@@ -345,7 +347,7 @@
 
 			@each $x in $value {
 				@each $y in $vendor-values {
-					@if $y == str-slice($x, 1, str-length($y)) {
+					@if $y == string.slice($x, 1, str-length($y)) {
 
 						$value: set-nth($value, index($value, $x), '-prefix-' + $x);
 						$expandValue: true;
@@ -362,7 +364,7 @@
 			}
 
 		// Expand just the value?
-			@elseif $expandValue {
+			@else if $expandValue {
 			    @each $vendor in $vendor-prefixes {
 			        #{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
 			    }
