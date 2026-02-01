@@ -4,18 +4,10 @@
 		<meta name="description" content="Joseph Rey C. Marilla's professional portfolio showcasing expertise in IT operations, IAM, Azure/M365, Python, and C# automation." />
 		<link rel="icon" href="images/favicon.png" type="image/png">
 		<title>Joseph Rey C. Marilla - Remote IT Operations Specialist</title>
-		<script>
-			// Dynamically set base href for GitHub Pages project sites
-			var path = window.location.pathname;
-			var base = path.substring(0, path.lastIndexOf('/MyProfile/') + '/MyProfile/'.length);
-			if (window.location.hostname === 'cxcx25.github.io' && base.endsWith('/MyProfile/')) {
-				document.write('<base href="' + base + '">');
-			}
-		</script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/MyProfile/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="/MyProfile/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+		<noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | relative_url }}" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -338,13 +330,13 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="/MyProfile/assets/js/jquery.min.js"></script>
-			<script src="/MyProfile/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/MyProfile/assets/js/jquery.scrolly.min.js"></script>
-			<script src="/MyProfile/assets/js/browser.min.js"></script>
-			<script src="/MyProfile/assets/js/breakpoints.min.js"></script>
-			<script src="/MyProfile/assets/js/util.js"></script>
-			<script src="/MyProfile/assets/js/main.js"></script>
+			<script src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
+			<script src="{{ "/assets/js/jquery.scrollex.min.js" | relative_url }}"></script>
+			<script src="{{ "/assets/js/jquery.scrolly.min.js" | relative_url }}"></script>
+			<script src="{{ "/assets/js/browser.min.js" | relative_url }}"></script>
+			<script src="{{ "/assets/js/breakpoints.min.js" | relative_url }}"></script>
+			<script src="{{ "/assets/js/util.js" | relative_url }}"></script>
+			<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 
 	</body>
 </html>
