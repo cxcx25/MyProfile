@@ -1,302 +1,71 @@
-C:\Users\joseph.marilla\Documents\Project\Profile>"C:\Users\joseph.marilla\AppData\Roaming\npm\sass" assets/sass/main.scss assets/css/main.css
-Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-  ╷
-1 │ @import 'libs/vars';
-  │         ^^^^^^^^^^^
-  ╵
-    assets\sass\main.scss 1:9  root stylesheet
-
-Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-  ╷
-2 │ @import 'libs/functions';
-  │         ^^^^^^^^^^^^^^^^
-  ╵
-    assets\sass\main.scss 2:9  root stylesheet
-
-Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-  ╷
-3 │ @import 'libs/mixins';
-  │         ^^^^^^^^^^^^^
-  ╵
-    assets\sass\main.scss 3:9  root stylesheet
-
-Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-  ╷
-4 │ @import 'libs/vendor';
-  │         ^^^^^^^^^^^^^
-  ╵
-    assets\sass\main.scss 4:9  root stylesheet
-
-Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-  ╷
-5 │ @import 'libs/breakpoints';
-  │         ^^^^^^^^^^^^^^^^^^
-  ╵
-    assets\sass\main.scss 5:9  root stylesheet
-
-Deprecation Warning [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-   ╷
-44 │         accent1-alt:        darken(#5e42a6, 10),
-   │                             ^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_vars.scss 44:17  @import
-    assets\sass\main.scss 1:9          root stylesheet
-
-Deprecation Warning [color-functions]: darken() is deprecated. Suggestions:
-
-color.scale($color, $lightness: -21.9827586207%)
-color.adjust($color, $lightness: -10%)
-
-More info: https://sass-lang.com/d/color-functions
-
-   ╷
-44 │         accent1-alt:        darken(#5e42a6, 10),
-   │                             ^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_vars.scss 44:17  @import
-    assets\sass\main.scss 1:9          root stylesheet
-
-Deprecation Warning [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-   ╷
-46 │         accent2-alt:        darken(#5052b5, 10),
-   │                             ^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_vars.scss 46:17  @import
-    assets\sass\main.scss 1:9          root stylesheet
-
-Deprecation Warning [color-functions]: darken() is deprecated. Suggestions:
-
-color.scale($color, $lightness: -19.5402298851%)
-color.adjust($color, $lightness: -10%)
-
-More info: https://sass-lang.com/d/color-functions
-
-   ╷
-46 │         accent2-alt:        darken(#5052b5, 10),
-   │                             ^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_vars.scss 46:17  @import
-    assets\sass\main.scss 1:9          root stylesheet
-
-Deprecation Warning [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-   ╷
-48 │         accent3-alt:        darken(#b74e91, 10)
-   │                             ^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_vars.scss 48:17  @import
-    assets\sass\main.scss 1:9          root stylesheet
-
-Deprecation Warning [color-functions]: darken() is deprecated. Suggestions:
-
-color.scale($color, $lightness: -19.5402298851%)
-color.adjust($color, $lightness: -10%)
-
-More info: https://sass-lang.com/d/color-functions
-
-   ╷
-48 │         accent3-alt:        darken(#b74e91, 10)
-   │                             ^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_vars.scss 48:17  @import
-    assets\sass\main.scss 1:9          root stylesheet
-
-Deprecation Warning [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
-
-Suggestion: if(sass($index < 0): length($list) + $index + 1; else: $index)
-
-More info: https://sass-lang.com/d/if-function
-
-   ╷
-22 │         $index: if($index < 0, length($list) + $index + 1, $index);
-   │                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_functions.scss 22:11  @import
-    assets\sass\main.scss 2:9               root stylesheet
-
-Deprecation Warning [elseif]: @elseif is deprecated and will not be supported in future Sass versions.
-
-Recommendation: @else if
-
-   ╷
-27 │         @elseif ($category == solid) {
-   │         ^^^^^^^
-   ╵
-    assets\sass\libs\_mixins.scss 27:3  @import
-    assets\sass\main.scss 3:9           root stylesheet
-
-Deprecation Warning [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
-
-Suggestion: if(sass($index < 0): length($list) + $index + 1; else: $index)
-
-More info: https://sass-lang.com/d/if-function
-
-    ╷
-273 │             $index: if($index < 0, length($list) + $index + 1, $index);
-    │                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ╵
-    assets\sass\libs\_vendor.scss 273:12  @import
-    assets\sass\main.scss 4:9             root stylesheet
-
-Deprecation Warning [elseif]: @elseif is deprecated and will not be supported in future Sass versions.
-
-Recommendation: @else if
-
-    ╷
-365 │             @elseif $expandValue {
-    │             ^^^^^^^
-    ╵
-    assets\sass\libs\_vendor.scss 365:4  @import
-    assets\sass\main.scss 4:9            root stylesheet
-
-Deprecation Warning [elseif]: @elseif is deprecated and will not be supported in future Sass versions.
-
-Recommendation: @else if
-
-   ╷
-44 │                 @elseif (str-slice($query, 0, 2) == '<=') {
-   │                 ^^^^^^^
-   ╵
-    assets\sass\libs\_breakpoints.scss 44:5  @import
-    assets\sass\main.scss 5:9                root stylesheet
-
-Deprecation Warning [elseif]: @elseif is deprecated and will not be supported in future Sass versions.
-
-Recommendation: @else if
-
-   ╷
-52 │                 @elseif (str-slice($query, 0, 1) == '>') {
-   │                 ^^^^^^^
-   ╵
-    assets\sass\libs\_breakpoints.scss 52:5  @import
-    assets\sass\main.scss 5:9                root stylesheet
-
-Deprecation Warning [elseif]: @elseif is deprecated and will not be supported in future Sass versions.
-
-Recommendation: @else if
-
-   ╷
-60 │                 @elseif (str-slice($query, 0, 1) == '<') {
-   │                 ^^^^^^^
-   ╵
-    assets\sass\libs\_breakpoints.scss 60:5  @import
-    assets\sass\main.scss 5:9                root stylesheet
-
-Deprecation Warning [new-global]: As of Dart Sass 2.0.0, !global assignments won't be able to declare new variables.
-
-Since this assignment is at the root of the stylesheet, the !global flag is
-unnecessary and can safely be removed.
-
-  ╷
-7 │     $breakpoints: () !global;
-  │     ^^^^^^^^^^^^^^^^^^^^^^^^
-  ╵
-    assets\sass\libs\_breakpoints.scss 7:2  @import
-    assets\sass\main.scss 5:9               root stylesheet
-
-Deprecation Warning [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use string.slice instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-   ╷
-36 │                 @if (str-slice($query, 0, 2) == '>=') {
-   │                      ^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_breakpoints.scss 36:10  breakpoint()
-    assets\sass\base\_page.scss 20:3          @import
-    assets\sass\main.scss 29:10               root stylesheet
-
-Deprecation Warning [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use string.slice instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-   ╷
-44 │                 @elseif (str-slice($query, 0, 2) == '<=') {
-   │                          ^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_breakpoints.scss 44:14  breakpoint()
-    assets\sass\base\_page.scss 20:3          @import
-    assets\sass\main.scss 29:10               root stylesheet
-
-Deprecation Warning [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
-
-Recommendation: math.div(_size(element-margin), 4) or calc(_size(element-margin) / 4)
-
-More info and automated migrator: https://sass-lang.com/d/slash-div
-
-    ╷
-153 │         padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
-    │                   ^^^^^^^^^^^^^^^^^^^^^^^^^
-    ╵
-    assets\sass\base\_typography.scss 153:13  @import
-    assets\sass\main.scss 30:10               root stylesheet
-
-Deprecation Warning [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
-
-Recommendation: math.div(_size(element-margin), 4) or calc(_size(element-margin) / 4)
-
-More info and automated migrator: https://sass-lang.com/d/slash-div
-
-    ╷
-153 │         padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
-    │                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
-    ╵
-    assets\sass\base\_typography.scss 153:43  @import
-    assets\sass\main.scss 30:10               root stylesheet
-
-Deprecation Warning [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
-
-Recommendation: math.div(100%, $cols) or calc(100% / $cols)
-
-More info and automated migrator: https://sass-lang.com/d/slash-div
-
-   ╷
-13 │             $unit: 100% / $cols;
-   │                    ^^^^^^^^^^^^
-   ╵
-    assets\sass\libs\_html-grid.scss 13:11  html-grid()
-    assets\sass\components\_row.scss 10:3   @import
-    assets\sass\main.scss 34:10             root stylesheet
-
-Error: Missing argument $lr.
-   ┌──> assets\sass\components\_features.scss
-141│                     @include padding(1em); // Adjusted padding for xsmall screens
-   │                     ^^^^^^^^^^^^^^^^^^^^^ invocation
-   ╵
-   ┌──> assets\sass\libs\_mixins.scss
-45 │ @mixin padding($tb, $lr, $pad: (0,0,0,0), $important: null) {
-   │        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ declaration
-   ╵
-  assets\sass\components\_features.scss 141:6  padding()
-  assets\sass\components\_features.scss 141:6  @content
-  assets\sass\libs\_breakpoints.scss 220:5     breakpoint()
-  assets\sass\components\_features.scss 137:4  @import
-  assets\sass\main.scss 37:10                  root stylesheet
+The console errors you're seeing (especially net::ERR_FILE_NOT_FOUND on multiple .jpg files like picb02.jpg, picb03.jpg, etc., plus the previous 503 / syntax errors on JS) are the direct reason your website shows only a purple background with no text or content visible.
+Why This Happens
+
+Your page is trying to load images (likely background images, profile photo, or section icons) from paths like /picb02.jpg, /picb03.jpg, etc.
+These files do not exist in your GitHub repo (or are in the wrong location), so GitHub Pages returns 404 → browser treats it as "file not found".
+More critically: Your page uses JavaScript (jQuery + plugins like scrolllex, main/util.js) to reveal/hide/show the actual text content (your name, summary, nav links, sections).
+When those JS files fail to load (due to wrong paths or missing files), jQuery never initializes → $ / jQuery is undefined → scroll animations, fade-ins, or content toggles never run.
+Result: The HTML text stays hidden (probably styled with opacity: 0, display: none, or positioned off-screen until JS "activates" it).
+
+
+The purple background loads because it's simple CSS (no dependency on broken resources), but everything else is blocked by these failed loads.
+How to Fix It (Step-by-Step)
+
+Confirm Missing Files in Repo
+Go to https://github.com/cxcx25/MyProfile
+Look inside: There is no folder like images/, pics/, or files named picb02.jpg, picb03.jpg, etc. (your repo has images/ folder but it's empty or doesn't contain these).
+Same for JS: No assets/js/jquery.min.js, jquery.scrolllex.min.js, main.js, etc. visible in the root listing.
+→ These files are either not committed/pushed, or the paths in index.html don't match the actual repo structure.
+
+Fix Image Paths (Quick Test)
+Open your local index.html (C:/Users/josephmarilla/Documents/Project/Profile/index.html)
+Search for lines like:HTML<img src="picb02.jpg">   or   background-image: url('picb03.jpg');
+These paths assume the images are in the same folder as index.html.
+Change to correct relative paths based on your repo:
+If images are in /images/ folder in repo → use src="./images/picb02.jpg"
+Or upload the actual jpg files to the repo's images/ folder via GitHub web or git push.
+
+Commit & push → wait 1–2 min → refresh live site.
+
+Fix JavaScript Loading (This Will Bring Back Your Text)
+In index.html, find all <script src="..."> tags (probably near the bottom or in <head>).
+Common broken patterns:
+<script src="jquery.min.js"></script> → file missing → 404 → syntax error when browser tries to parse the 404 HTML response as JS.
+<script src="/assets/js/main.js"></script> → leading / means root of domain → wrong on GitHub Pages.
+
+Temporary quick fix (use CDNs to bypass local files):
+Replace your jQuery lines with:HTML<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- If using plugins like scrollTo / scrolllex, find CDN or remove if not essential -->
+<!-- Example for a common one: -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script> -->
+Remove or comment out broken local scripts for now:HTML<!-- <script src="assets/js/jquery.scrolllex.min.js"></script> -->
+<!-- <script src="assets/js/main.js"></script> -->
+If your page has custom JS (e.g., in main.js for revealing content), you may need to inline a simple version or fix the file upload.
+
+Upload Missing Assets Properly
+Create folders in your local project if needed:textMyProfile/
+├── index.html
+├── assets/
+│   └── js/
+│       ├── jquery.min.js     (download from jquery.com)
+│       └── main.js           (your custom code)
+└── images/
+    ├── picb02.jpg
+    └── picb03.jpg            (your actual images)
+git add . → git commit → git push
+Or upload directly via GitHub web interface (Add file → Upload files).
+
+Test & Clear Cache
+After push: Visit https://cxcx25.github.io/MyProfile/ and hard refresh (Ctrl + F5 or Ctrl + Shift + R).
+Open in Incognito tab to avoid cache.
+Check console again — aim for no 404/503 on JS/images.
+
+
+Expected Outcome After Fix
+
+Text (your name "Joseph Rey C. Marilla", title, summary, nav links like Home/Achievements/Projects) should appear.
+Purple background stays (that's fine), but content overlays it once JS runs.
+
+If you paste here the <head> section + all <script> tags from your index.html (or the full file if small), I can tell you exactly which lines to change. Or share the repo link to specific files (e.g., https://github.com/cxcx25/MyProfile/blob/main/index.html) so I can review paths.
