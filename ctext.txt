@@ -1,71 +1,79 @@
-The console errors you're seeing (especially net::ERR_FILE_NOT_FOUND on multiple .jpg files like picb02.jpg, picb03.jpg, etc., plus the previous 503 / syntax errors on JS) are the direct reason your website shows only a purple background with no text or content visible.
-Why This Happens
+The page at https://cxcx25.github.io/MyProfile/ is still not displaying the expected Hyperspace theme panels/layout (the multi-panel scrolling design with spotlights, sections sliding in, etc.). Instead, it shows only a solid purple/violet background (likely the fallback or body style) with no visible text, panels, or interactive elements.
+This is almost always caused by the preloader / initialization logic failing on GitHub Pages, leaving the <body class="is-preload"> (or similar) stuck — Hyperspace hides nearly everything until JS removes the "is-preload" class after loading/animations.
+Most Likely Causes (from your setup)
 
-Your page is trying to load images (likely background images, profile photo, or section icons) from paths like /picb02.jpg, /picb03.jpg, etc.
-These files do not exist in your GitHub repo (or are in the wrong location), so GitHub Pages returns 404 → browser treats it as "file not found".
-More critically: Your page uses JavaScript (jQuery + plugins like scrolllex, main/util.js) to reveal/hide/show the actual text content (your name, summary, nav links, sections).
-When those JS files fail to load (due to wrong paths or missing files), jQuery never initializes → $ / jQuery is undefined → scroll animations, fade-ins, or content toggles never run.
-Result: The HTML text stays hidden (probably styled with opacity: 0, display: none, or positioned off-screen until JS "activates" it).
+JavaScript critical failure (highest probability)
+Hyperspace relies heavily on its assets/js/main.js + util.js + browser.min.js + breakpoints.js to:
+Remove is-preload class from body
+Initialize scroll/reveal effects
+Show panels/sections
+
+If any of these scripts 404 (file not found), has wrong path, or throws a syntax error → the whole init chain breaks → body stays in preload state → content hidden forever.
+Your earlier console showed jQuery syntax errors + undefined jQuery → confirms JS is broken early.
+
+Incorrect file paths for GitHub Pages
+Local testing (file://) often forgives bad paths.
+GitHub Pages is strict: paths must be relative (starting with ./ or no leading /) or full repo-relative.
+Common mistakes in Hyperspace forks:HTML<link rel="stylesheet" href="/assets/css/main.css" />   ← WRONG (leading / = domain root)
+<script src="assets/js/main.js"></script>               ← missing ./   (often fails)Should be:HTML<link rel="stylesheet" href="./assets/css/main.css" />
+<script src="./assets/js/main.js"></script>
+
+Files not actually committed or in wrong location
+From repo inspection: assets/ exists, but many forks have subfolders like assets/css/, assets/js/, assets/sass/, assets/webfonts/.
+If you only committed assets/ as empty or partial → 404 on main.css / main.js / util.js.
+Hyperspace also needs images/fonts in assets/images/ and assets/webfonts/.
+
+Jekyll interference (if using _config.yml)
+Your repo has _config.yml → GitHub thinks it's Jekyll.
+Jekyll renames/moves files unless you add include: [assets] or disable processing.
+Result: JS/CSS sometimes not served correctly → 404 or empty response.
 
 
-The purple background loads because it's simple CSS (no dependency on broken resources), but everything else is blocked by these failed loads.
 How to Fix It (Step-by-Step)
 
-Confirm Missing Files in Repo
-Go to https://github.com/cxcx25/MyProfile
-Look inside: There is no folder like images/, pics/, or files named picb02.jpg, picb03.jpg, etc. (your repo has images/ folder but it's empty or doesn't contain these).
-Same for JS: No assets/js/jquery.min.js, jquery.scrolllex.min.js, main.js, etc. visible in the root listing.
-→ These files are either not committed/pushed, or the paths in index.html don't match the actual repo structure.
+Switch to relative paths everywhere
+Open index.html
+Replace all asset links:
+/assets/... → ./assets/...
+assets/... → ./assets/... (add dot-slash)
 
-Fix Image Paths (Quick Test)
-Open your local index.html (C:/Users/josephmarilla/Documents/Project/Profile/index.html)
-Search for lines like:HTML<img src="picb02.jpg">   or   background-image: url('picb03.jpg');
-These paths assume the images are in the same folder as index.html.
-Change to correct relative paths based on your repo:
-If images are in /images/ folder in repo → use src="./images/picb02.jpg"
-Or upload the actual jpg files to the repo's images/ folder via GitHub web or git push.
+Example full head/scripts block (typical Hyperspace):HTML<link rel="stylesheet" href="./assets/css/main.css" />
+<!-- ... other css ... -->
 
-Commit & push → wait 1–2 min → refresh live site.
+<!-- Scripts at bottom -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.scrollex.min.js"></script>
+<script src="./assets/js/jquery.scrolly.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/util.js"></script>
+<script src="./assets/js/main.js"></script>
 
-Fix JavaScript Loading (This Will Bring Back Your Text)
-In index.html, find all <script src="..."> tags (probably near the bottom or in <head>).
-Common broken patterns:
-<script src="jquery.min.js"></script> → file missing → 404 → syntax error when browser tries to parse the 404 HTML response as JS.
-<script src="/assets/js/main.js"></script> → leading / means root of domain → wrong on GitHub Pages.
+Verify / Re-upload all required files
+Download fresh Hyperspace template from https://html5up.net/hyperspace
+Copy all files from its assets/ into your repo's assets/ (overwrite).
+Especially ensure:
+assets/js/main.js exists and has code to do document.body.classList.remove('is-preload');
+assets/css/main.css has .is-preload * { ... visibility: hidden ... } or similar hiding rules
 
-Temporary quick fix (use CDNs to bypass local files):
-Replace your jQuery lines with:HTML<!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+Commit + push → wait 1–2 minutes.
 
-<!-- If using plugins like scrollTo / scrolllex, find CDN or remove if not essential -->
-<!-- Example for a common one: -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script> -->
-Remove or comment out broken local scripts for now:HTML<!-- <script src="assets/js/jquery.scrolllex.min.js"></script> -->
-<!-- <script src="assets/js/main.js"></script> -->
-If your page has custom JS (e.g., in main.js for revealing content), you may need to inline a simple version or fix the file upload.
+Disable Jekyll processing (quick fix)
+Add a file called .nojekyll (empty) in the root of repo → commit/push.
+This tells GitHub Pages to serve files raw (no Jekyll build) → fixes most asset path issues.
 
-Upload Missing Assets Properly
-Create folders in your local project if needed:textMyProfile/
-├── index.html
-├── assets/
-│   └── js/
-│       ├── jquery.min.js     (download from jquery.com)
-│       └── main.js           (your custom code)
-└── images/
-    ├── picb02.jpg
-    └── picb03.jpg            (your actual images)
-git add . → git commit → git push
-Or upload directly via GitHub web interface (Add file → Upload files).
+Temporary debug: Remove JS dependency
+Comment out all <script> tags except maybe jQuery.
+Remove class="is-preload" from <body> manually.
+Save → push → check if text appears (ugly but confirms preload is the blocker).
+Then re-enable JS one file at a time to find the broken one.
 
-Test & Clear Cache
-After push: Visit https://cxcx25.github.io/MyProfile/ and hard refresh (Ctrl + F5 or Ctrl + Shift + R).
-Open in Incognito tab to avoid cache.
-Check console again — aim for no 404/503 on JS/images.
+Check browser console after changes
+Hard refresh (Ctrl + F5).
+Look for 404 on any .js / .css / image.
+If you see Failed to load resource: net::ERR_FILE_NOT_FOUND → path still wrong.
+If no errors but still blank → body still has is-preload (inspect element → check <body> classes).
 
 
-Expected Outcome After Fix
-
-Text (your name "Joseph Rey C. Marilla", title, summary, nav links like Home/Achievements/Projects) should appear.
-Purple background stays (that's fine), but content overlays it once JS runs.
-
-If you paste here the <head> section + all <script> tags from your index.html (or the full file if small), I can tell you exactly which lines to change. Or share the repo link to specific files (e.g., https://github.com/cxcx25/MyProfile/blob/main/index.html) so I can review paths.
+If you paste the current <head> and bottom <script> tags from your index.html (or link to the raw file on GitHub), I can give you the exact lines to change. Alternatively, push the fixes above and share the new console errors — we'll nail it in the next round.
+This is a very standard Hyperspace-on-GitHub-Pages trap — once paths + files match and preload removes, the panels will appear.
