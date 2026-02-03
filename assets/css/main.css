@@ -2409,6 +2409,7 @@ body.is-ie .spotlights > section {
   display: block;
   position: relative;
   width: 25em;
+  min-height: 20em;
 }
 .spotlights > section > .image img {
   border-radius: 0;

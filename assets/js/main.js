@@ -130,7 +130,9 @@
 		});
 
 	// Spotlights.
-		$('.spotlights > section')
+		var $spotlights = $('.spotlights > section');
+
+		$spotlights
 			.scrollex({
 				mode: 'middle',
 				top: '-10vh',
@@ -147,8 +149,9 @@
 						$(this).removeClass('inactive');
 
 				}
-			})
-			.each(function() {
+			});
+
+		$spotlights.each(function() {
 
 				var	$this = $(this),
 					$image = $this.find('.image'),
@@ -163,7 +166,6 @@
 						$image.css('background-position', x);
 
 				// Hide <img>.
-					$img.hide();
 
 			});
 
