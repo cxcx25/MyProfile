@@ -2403,17 +2403,20 @@ body.is-ie .spotlights > section {
   min-height: 0;
 }
 .spotlights > section > .image {
-  background-position: center center;
-  background-size: cover;
   border-radius: 0;
   display: block;
   position: relative;
   width: 25em;
-  min-height: 20em;
+  height: 100%;
+  overflow: hidden;
 }
 .spotlights > section > .image img {
   border-radius: 0;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .spotlights > section > .image:before {
   -moz-transition: opacity 1s ease;
@@ -3131,14 +3134,3 @@ body.is-preload #sidebar nav ul li {
   margin: 0 auto 1em auto; /* Center the image */
 }
 
-@media (min-width: 737px) {
-    .spotlights > section > .image img {
-        display: none;
-    }
-}
-
-@media (max-width: 736px) {
-    .spotlights > section > .image {
-        background-image: none !important;
-    }
-}
