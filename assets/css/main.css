@@ -2403,20 +2403,18 @@ body.is-ie .spotlights > section {
   min-height: 0;
 }
 .spotlights > section > .image {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: repeat;
   border-radius: 0;
   display: block;
   position: relative;
   width: 25em;
-  height: 100%;
-  overflow: hidden;
+  min-height: 20em;
 }
 .spotlights > section > .image img {
   border-radius: 0;
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 .spotlights > section > .image:before {
   -moz-transition: opacity 1s ease;
