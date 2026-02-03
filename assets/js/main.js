@@ -166,6 +166,7 @@
 						$image.css('background-position', x);
 
 				// Hide <img>.
+					$img.hide();
 
 			});
 

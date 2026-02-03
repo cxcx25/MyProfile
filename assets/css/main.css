@@ -3131,3 +3131,14 @@ body.is-preload #sidebar nav ul li {
   margin: 0 auto 1em auto; /* Center the image */
 }
 
+@media (min-width: 737px) {
+    .spotlights > section > .image img {
+        display: none;
+    }
+}
+
+@media (max-width: 736px) {
+    .spotlights > section > .image {
+        background-image: none !important;
+    }
+}
