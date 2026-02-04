@@ -2404,8 +2404,8 @@ body.is-ie .spotlights > section {
 }
 .spotlights > section > .image {
   background-position: center center;
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 0;
   display: block;
   position: relative;
@@ -2415,6 +2415,9 @@ body.is-ie .spotlights > section {
 .spotlights > section > .image img {
   border-radius: 0;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .spotlights > section > .image:before {
   -moz-transition: opacity 1s ease;
@@ -2478,16 +2481,9 @@ body.is-ie .spotlights > section {
 .spotlights > section > .content {
   padding: 4em 4em 2em 4em;
 }
-.spotlights > section {
-  display: block;
-}
-.spotlights > section > .image {
-  width: 100%;
-  height: 50vh;
-}
-.spotlights > section > .content {
-  width: 100%;
-}
+
+
+
 .spotlights > section.inactive > .content > .inner, body.is-preload .spotlights > section > .content > .inner {
   -moz-transform: translateY(1em);
   -webkit-transform: translateY(1em);
@@ -3122,13 +3118,47 @@ body.is-preload #sidebar nav ul li {
 
 /*# sourceMappingURL=main.css.map */
 
-/* Profile Headshot */
-.profile-headshot {
-  border-radius: 50%;
-  width: 150px !important; /* Use !important to override any conflicting styles */
-  height: auto !important; /* Allow height to adjust based on aspect ratio */
+@media (max-width: 736px) {
+  .spotlights > section {
+    flex-direction: column;
+  }
+  .spotlights > section > .image {
+    width: 100%;
+    height: auto; /* Allow height to adjust naturally */
+    min-height: auto; /* Remove fixed min-height for mobile */
+  }
+  .spotlights > section > .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #intro .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Profile Picture */
+#intro .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 16px;        /* curved edges, not circle */
   object-fit: cover;
-  aspect-ratio: 1 / 1; /* Force a square aspect ratio */
-  margin: 0 auto 1em auto; /* Center the image */
+  object-position: center top; /* keeps face visible */
+  flex-shrink: 0;           /* prevents squishing */
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+#intro .hero-content {
+  display: flex;
+  align-items: center;      /* vertical alignment fix */
+  gap: 32px;                /* clean spacing */
+}
+
+#intro .hero-text {
+  max-width: 700px;
 }
 
