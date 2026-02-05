@@ -2,35 +2,9 @@
 
 This guide outlines the steps to switch between your 'original-theme' and the 'html5up-dimension' theme for your GitHub Pages site. Remember that GitHub Pages serves the `index.html` and associated assets that are directly in the root of your repository.
 
-**Important Setup (One-Time):**
-
-Ensure your original portfolio files are moved into a subfolder named `original-theme/`. If you haven't done this, execute these commands in your project's root directory:
-
-```powershell
-# Create a folder for your original theme
-New-Item -Path "original-theme" -ItemType Directory
-
-# Move your original portfolio files into this new folder
-# Adjust file/folder names as necessary for your specific original theme
-Move-Item -Path "index.html" -Destination "original-theme/" -Force
-Move-Item -Path "assets" -Destination "original-theme/" -Recurse -Force
-Move-Item -Path "images" -Destination "original-theme/" -Recurse -Force
-Move-Item -Path "Joseph Rey Marilla.docx" -Destination "original-theme/" -Force
-Move-Item -Path "Joseph Rey Marilla.pdf" -Destination "original-theme/" -Force
-Move-Item -Path "aa.txt" -Destination "original-theme/" -Force
-Move-Item -Path "_config.yml" -Destination "original-theme/" -Force
-Move-Item -Path "package.json" -Destination "original-theme/" -Force
-# Add any other root files from your original portfolio that need to be moved
-
-# Commit and push these organizational changes (optional, but good practice)
-git add .
-git commit -m "Organized original portfolio into 'original-theme' folder"
-git push origin master
-```
-
----
-
 **How to Switch Between Themes:**
+
+**Important Note on Pushing:** When you use `git push`, your entire local repository (including all theme subfolders like `original-theme/` and `html5up-dimension/`) is synced with your remote GitHub repository. This means all your theme options are always safely stored on GitHub, and you won't lose any themes when switching between machines or cloning your repository elsewhere.
 
 To activate a theme, you need to copy its contents to the root of your repository, then commit and push these changes to GitHub.
 
