@@ -1,0 +1,80 @@
+# Guide to Interchanging Themes for GitHub Pages
+
+This guide outlines the steps to switch between your 'original-theme' and the 'html5up-dimension' theme for your GitHub Pages site. Remember that GitHub Pages serves the `index.html` and associated assets that are directly in the root of your repository.
+
+**Important Setup (One-Time):**
+
+Ensure your original portfolio files are moved into a subfolder named `original-theme/`. If you haven't done this, execute these commands in your project's root directory:
+
+```powershell
+# Create a folder for your original theme
+New-Item -Path "original-theme" -ItemType Directory
+
+# Move your original portfolio files into this new folder
+# Adjust file/folder names as necessary for your specific original theme
+Move-Item -Path "index.html" -Destination "original-theme/" -Force
+Move-Item -Path "assets" -Destination "original-theme/" -Recurse -Force
+Move-Item -Path "images" -Destination "original-theme/" -Recurse -Force
+Move-Item -Path "Joseph Rey Marilla.docx" -Destination "original-theme/" -Force
+Move-Item -Path "Joseph Rey Marilla.pdf" -Destination "original-theme/" -Force
+Move-Item -Path "aa.txt" -Destination "original-theme/" -Force
+Move-Item -Path "_config.yml" -Destination "original-theme/" -Force
+Move-Item -Path "package.json" -Destination "original-theme/" -Force
+# Add any other root files from your original portfolio that need to be moved
+
+# Commit and push these organizational changes (optional, but good practice)
+git add .
+git commit -m "Organized original portfolio into 'original-theme' folder"
+git push origin master
+```
+
+---
+
+**How to Switch Between Themes:**
+
+To activate a theme, you need to copy its contents to the root of your repository, then commit and push these changes to GitHub.
+
+**A. To Activate the 'html5up-dimension' Theme:**
+
+1.  **Clear your repository root:** Remove all files and folders that currently represent the active theme from the root directory.
+    ```powershell
+    # !!! BE CAREFUL: This command deletes files in your root.
+    # Ensure your themes are safely backed up in their subfolders. !!!
+    Get-ChildItem -Path "." -Exclude "original-theme", "html5up-dimension", ".git", ".gitignore", ".nojekyll", "node_modules" | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Recurse -Force }
+    ```
+    *(The `-Exclude` part helps prevent accidental deletion of your theme subfolders or Git history)*
+
+2.  **Copy the Dimension theme files to the root:**
+    ```powershell
+    Copy-Item -Path "html5up-dimension/*" -Destination "./" -Recurse -Force
+    ```
+
+3.  **Commit and push these changes:**
+    ```bash
+    git add .
+    git commit -m "Activated html5up-dimension Theme"
+    git push origin master
+    ```
+
+---
+
+**B. To Activate Your 'original-theme':**
+
+1.  **Clear your repository root:** Remove all files and folders that currently represent the active theme (Dimension) from the root directory.
+    ```powershell
+    # !!! BE CAREFUL: This command deletes files in your root.
+    # Ensure your themes are safely backed up in their subfolders. !!!
+    Get-ChildItem -Path "." -Exclude "original-theme", "html5up-dimension", ".git", ".gitignore", ".nojekyll", "node_modules" | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Recurse -Force }
+    ```
+
+2.  **Copy your Original theme files to the root:**
+    ```powershell
+    Copy-Item -Path "original-theme/*" -Destination "./" -Recurse -Force
+    ```
+
+3.  **Commit and push these changes:**
+    ```bash
+    git add .
+    git commit -m "Activated Original Theme"
+    git push origin master
+    ```
