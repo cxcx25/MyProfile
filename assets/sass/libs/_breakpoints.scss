@@ -1,20 +1,17 @@
-@use "sass:map";
-@use "sass:string";
-
 // breakpoints.scss v1.0 | @ajlkn | MIT licensed */
 
 // Vars.
 
 	/// Breakpoints.
 	/// @var {list}
-	$breakpoints: ();
+	$breakpoints: () !global;
 
 // Mixins.
 
 	/// Sets breakpoints.
 	/// @param {map} $x Breakpoints.
 	@mixin breakpoints($x: ()) {
-		$breakpoints: $x;
+		$breakpoints: $x !global;
 	}
 
 	/// Wraps @content in a @media block targeting a specific orientation.
@@ -36,38 +33,42 @@
 		// Determine operator, breakpoint.
 
 			// Greater than or equal.
-				@if (string.slice($query, 0, 2) == '>=') {
+				@if (str-slice($query, 0, 2) == '>=') {
 
-					                    $breakpoint: string.slice($query, 3);
+					$op: 'gte';
+					$breakpoint: str-slice($query, 3);
+
 				}
 
 			// Less than or equal.
-				@else if (string.slice($query, 0, 2) == '<=') {
+				@elseif (str-slice($query, 0, 2) == '<=') {
 
 					$op: 'lte';
-					$breakpoint: string.slice($query, 3);
+					$breakpoint: str-slice($query, 3);
 
 				}
 
 			// Greater than.
-				@else if (string.slice($query, 0, 1) == '>') {
+				@elseif (str-slice($query, 0, 1) == '>') {
 
-					                    $op: 'gt';
-					                    $breakpoint: string.slice($query, 2);
+					$op: 'gt';
+					$breakpoint: str-slice($query, 2);
+
 				}
 
 			// Less than.
-				@else if (string.slice($query, 0, 1) == '<') {
+				@elseif (str-slice($query, 0, 1) == '<') {
 
-					                    $op: 'lt';
-										$breakpoint: string.slice($query, 2);
+					$op: 'lt';
+					$breakpoint: str-slice($query, 2);
+
 				}
 
 			// Not.
-				@else if (string.slice($query, 0, 1) == '!') {
+				@elseif (str-slice($query, 0, 1) == '!') {
 
 					$op: 'not';
-					$breakpoint: string.slice($query, 2);
+					$breakpoint: str-slice($query, 2);
 
 				}
 
@@ -80,7 +81,7 @@
 				}
 
 		// Build media.
-			@if ($breakpoint and map.has-key($breakpoints, $breakpoint)) {
+			@if ($breakpoint and map-has-key($breakpoints, $breakpoint)) {
 
 				$a: map-get($breakpoints, $breakpoint);
 
@@ -201,7 +202,7 @@
 					@else {
 
 						// Missing a media type? Prefix with "screen".
-							@if (string.slice($a, 0, 1) == '(') {
+							@if (str-slice($a, 0, 1) == '(') {
 								$media: 'screen and ' + $a;
 							}
 
@@ -215,12 +216,7 @@
 			}
 
 		// Output.
-			@if $media {
-				@media #{$media} {
-					@content;
-				}
-			}
-			@else {
+	        @media #{$media} {
 				@content;
 			}
 
