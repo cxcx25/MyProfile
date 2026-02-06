@@ -1340,13 +1340,12 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
 			border-radius: 4px;
+            gap: 3rem !important; /* Add spacing between navigation items */
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
 			}
 
 				#header nav ul li:first-child {
@@ -1382,6 +1381,7 @@ input, select, textarea {
 			width: 1px;
 			height: 100%;
 			background: #ffffff;
+            display: none !important; /* Force hide the vertical line */
 		}
 
 		#header nav.use-middle ul li.is-middle {
@@ -1398,6 +1398,7 @@ input, select, textarea {
 			-ms-filter: blur(0.1rem);
 			filter: blur(0.1rem);
 			opacity: 0;
+            display: none !important; /* Force hide the entire header */
 		}
 
 		body.is-preload #header {
@@ -1681,3 +1682,9 @@ input, select, textarea {
 		    display: inline-block; /* Or block depending on desired layout */
 		    overflow: hidden; /* Hide overflow if image is larger than container */
 		}
+/* Custom: Kill all other pseudo-line elements in navigation */
+#header nav ul li::after,
+#header nav ul a::after {
+    display: none !important;
+}
+

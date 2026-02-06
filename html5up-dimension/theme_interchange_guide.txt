@@ -1,0 +1,54 @@
+# Guide to Interchanging Themes for GitHub Pages
+
+This guide outlines the steps to switch between your 'original-theme' and the 'html5up-dimension' theme for your GitHub Pages site. Remember that GitHub Pages serves the `index.html` and associated assets that are directly in the root of your repository.
+
+**How to Switch Between Themes:**
+
+**Important Note on Pushing:** When you use `git push`, your entire local repository (including all theme subfolders like `original-theme/` and `html5up-dimension/`) is synced with your remote GitHub repository. This means all your theme options are always safely stored on GitHub, and you won't lose any themes when switching between machines or cloning your repository elsewhere.
+
+To activate a theme, you need to copy its contents to the root of your repository, then commit and push these changes to GitHub.
+
+**A. To Activate the 'html5up-dimension' Theme:**
+
+1.  **Clear your repository root:** Remove all files and folders that currently represent the active theme from the root directory.
+    ```powershell
+    # !!! BE CAREFUL: This command deletes files in your root.
+    # Ensure your themes are safely backed up in their subfolders. !!!
+    Get-ChildItem -Path "." -Exclude "original-theme", "html5up-dimension", ".git", ".gitignore", ".nojekyll", "node_modules" | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Recurse -Force }
+    ```
+    *(The `-Exclude` part helps prevent accidental deletion of your theme subfolders or Git history)*
+
+2.  **Copy the Dimension theme files to the root:**
+    ```powershell
+    Copy-Item -Path "html5up-dimension/*" -Destination "./" -Recurse -Force
+    ```
+
+3.  **Commit and push these changes:**
+    ```bash
+    git add .
+    git commit -m "Activated html5up-dimension Theme"
+    git push origin master
+    ```
+
+---
+
+**B. To Activate Your 'original-theme':**
+
+1.  **Clear your repository root:** Remove all files and folders that currently represent the active theme (Dimension) from the root directory.
+    ```powershell
+    # !!! BE CAREFUL: This command deletes files in your root.
+    # Ensure your themes are safely backed up in their subfolders. !!!
+    Get-ChildItem -Path "." -Exclude "original-theme", "html5up-dimension", ".git", ".gitignore", ".nojekyll", "node_modules" | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Recurse -Force }
+    ```
+
+2.  **Copy your Original theme files to the root:**
+    ```powershell
+    Copy-Item -Path "original-theme/*" -Destination "./" -Recurse -Force
+    ```
+
+3.  **Commit and push these changes:**
+    ```bash
+    git add .
+    git commit -m "Activated Original Theme"
+    git push origin master
+    ```
